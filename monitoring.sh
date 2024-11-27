@@ -40,7 +40,7 @@ IP=$(hostname -I | awk '{print $1}')
 Mac=$(ip link show | awk '/ether/ {print $2}')
 
 #number of sudo commands on log
-SudoCmd=$(journalctl _COMM=sudo | grep COMMAND | wc -l)
+SudoCmd=$(grep COMMAND /var/log/sudo/sudo.log | wc -l)
 
 wall "	#Architecture: $arch
 	#CPU physical: $CPU
