@@ -1,0 +1,7 @@
+host:		odruke-s42
+rootpass: Rootpass42.	
+
+user odruke-s
+pass: Userpass42.
+
+encryption passphrase: Encryption42.
